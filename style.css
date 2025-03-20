@@ -1,0 +1,63 @@
+/* Basic styling for layout and typography */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Text area styling */
+textarea {
+    width: 80%;
+    height: 80%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background: transparent;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+/* Control buttons container */
+.controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for each button */
+.button {
+    cursor: pointer;
+    background: none;
+    border: 1px solid currentColor;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    color: inherit;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    background: currentColor;
+    color: #ffffff;
+}
+
+/* Word count display */
+.word-count {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.9rem;
+}
